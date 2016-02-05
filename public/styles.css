@@ -1,0 +1,11 @@
+#app {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.modal {
+  flex: 1 0;
+  background: red;
+  height: 500px;
+}

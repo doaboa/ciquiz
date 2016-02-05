@@ -1,0 +1,21 @@
+const path = require('path')
+
+module.exports = {
+  devtool: 'source-map',
+  entry: {
+    app: './src/app.js'
+  },
+  output: {
+    path: path.join(__dirname, './public'),
+    filename: 'bundle.js'
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: 'node_modules',
+        loaders: ['babel']
+      }
+    ]
+  }
+}
