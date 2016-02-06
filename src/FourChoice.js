@@ -18,7 +18,7 @@ class FourChoice extends React.Component {
           {
             this.props.options.map((option, i) => {
               return(
-                <div key={i} className='option' style={{backgroundImage:'url(' + option.image + ')'}} onClick={this.handleClick.bind(this, option.text)}>
+                <div key={i} className='option-vertical' style={{backgroundImage:'url(' + option.image + ')'}} onClick={this.handleClick.bind(this, option.text)}>
                   <span>{option.text}</span>
                   <div className='photo-cover'></div>
                 </div>

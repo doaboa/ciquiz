@@ -73,6 +73,7 @@ html, body {
 
 .modal-child-vertical {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .text-container {
@@ -120,6 +121,16 @@ html, body {
   cursor: pointer;
 }
 
+.option-vertical {
+  border: 2px solid #edeae5;
+  align-self: stretch;
+  display: flex;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  width: 45%;
+}
+
 .form-container input {
   margin: 1em;
   font-size: 1.2em;
@@ -140,7 +151,7 @@ html, body {
 }
 
 /* fourth level */
-.option span {
+.option span, .option-vertical span {
   flex: 1;
   align-self: center;
   font-style: italic;
