@@ -75,10 +75,23 @@ html, body {
   width: 100%;
 }
 
+.form-container {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  align-self: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  position: relative;
+}
+
 /* third level */
 .modal-child p {
   align-self: center;
   line-height: 2em;
+  flex: 1;
 }
 
 .option {
@@ -88,6 +101,26 @@ html, body {
   display: flex;
   background-size: cover;
   position: relative;
+  cursor: pointer;
+}
+
+.form-container input {
+  margin: 1em;
+  font-size: 1.2em;
+  padding: 0.5em;
+  font-family: Helvetica, Serif;
+}
+
+.form-container .submit {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  background-color: #5c7c99;
+  border: 1px grey solid;
+  color: white;
+  font-family: Helvetica, Serif;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
 }
 
 /* fourth level */

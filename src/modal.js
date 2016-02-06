@@ -13,9 +13,24 @@ class Modal extends React.Component {
 
   constructor(props) {
     super(props)
+    this.response = {
+      questions: {}
+    }
     this.state = {
       step: 0
     }
+  }
+
+  onNext(option) {
+    this.response.questions[`q${this.state.step + 1}`] = option
+    this.setState({
+      step: this.state.step + 1
+    })
+  }
+
+  onSubmit(details) {
+    Object.assign(this.response, details)
+    this.props.onSubmit(this.response)
   }
 
   render () {
@@ -26,7 +41,7 @@ class Modal extends React.Component {
 
         <span className='step'><span className='highlight-text'>Step {this.state.step + 1}</span> of 5</span>
         <div className='close-button'>&times;</div>
-        <Layout text={slide.text} question={slide.question} options={slide.options}/>
+        <Layout text={slide.text} question={slide.question} options={slide.options} onNext={this.onNext.bind(this)} onSubmit={this.onSubmit.bind(this)} />
 
       </section>
     )

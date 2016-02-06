@@ -29,19 +29,19 @@ export function quizData () {
       "options": [
         {
           "image": "images/4.jpeg",
-          "text": ""
+          "text": "message1"
         },
         {
           "image": "images/5.jpeg",
-          "text": ""
+          "text": "message2"
         },
         {
           "image": "images/6.jpeg",
-          "text": ""
+          "text": "message3"
         },
         {
           "image": "images/7.jpeg",
-          "text": ""
+          "text": "message4"
         }
       ]
     },
@@ -95,4 +95,16 @@ export function quizData () {
       "layout": 3
     }
   ]
+}
+
+export function submitQuiz (quizData) {
+  fetch('/applicants', {
+    method: 'post',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(quizData)
+  })
+  console.log('Posted:', quizData)
 }

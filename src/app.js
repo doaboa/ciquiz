@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Modal from './Modal'
-import { quizData } from './api'
+import 'fetch-polyfill'
+import { quizData, submitQuiz } from './api'
 
 ReactDOM.render(
-  <Modal quizData={quizData()} />,
+  <Modal quizData={quizData()} onSubmit={submitQuiz} />,
   document.getElementById('app')
 )
