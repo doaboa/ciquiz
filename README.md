@@ -1,7 +1,19 @@
+C+I Quiz Generated from Object
+----
+
+## View
+
 ```
 make build
 make serve
 ```
-view at http://localhost:3000
+open http://localhost:3000
 
-while developing, npm install and use make watch instead of make build
+## Develop
+
+```
+make build
+make watch
+```
+## Post Request
+Open console for a log of posted element... or of course, network panel -> headers
