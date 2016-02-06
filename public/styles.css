@@ -1,11 +1,110 @@
-#app {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+html, body {
+  background-color: grey;
+  height: 100%;
+  margin: 0;
 }
 
+#app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  font-family: Helvetica, Serif;
+}
+
+/* GENERAL MODAL & HEADER STYLES */
+
 .modal {
-  flex: 1 0;
-  background: red;
-  height: 500px;
+  align-self: center;
+  width: 80%;
+  height: 80%;
+  background-color: #f7f5f2;
+  position: relative;
+  border: 2px solid #edeae5;
+  color: #9d9c9b;
+  text-align: center;
+}
+
+.close-button {
+  font-weight: 600;
+  padding: 0.5em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+.step {
+  color: #9d9c9b;
+  font-style: italic;
+  padding: 1em;
+  position: absolute;
+  top: 0.75em;
+  left: 0.75em;
+}
+
+.highlight-text {
+  color: #5c7c99;
+  font-weight: 600;
+}
+
+
+/* LAYOUT STYLES */
+
+/* highest level */
+.modal-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* second level */
+.modal-child {
+  display: flex;
+  align-self: center;
+}
+
+.text-container {
+  margin-top: 2em;
+  flex: 2;
+  width: 50%;
+}
+
+.image-container {
+  flex: 3;
+  width: 100%;
+}
+
+/* third level */
+.modal-child p {
+  align-self: center;
+  line-height: 2em;
+}
+
+.option {
+  flex: 1;
+  border: 2px solid #edeae5;
+  align-self: stretch;
+  display: flex;
+  background-size: cover;
+  position: relative;
+}
+
+/* fourth level */
+.option span {
+  flex: 1;
+  align-self: center;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+
+.photo-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.5);
 }

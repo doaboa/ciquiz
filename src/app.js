@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Modal from './modal'
+import Modal from './Modal'
+import { quizData } from './api'
 
 ReactDOM.render(
-  <Modal />,
+  <Modal quizData={quizData()} />,
   document.getElementById('app')
 )

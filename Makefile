@@ -1,5 +1,6 @@
 BIN = ./node_modules/.bin
 build:
+	@npm install
 	@$(BIN)/webpack
 
 serve:
