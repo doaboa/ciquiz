@@ -8,13 +8,13 @@ class FourChoice extends React.Component {
 
   render () {
     return (
-      <section className='modal-slide four-choice'>
+      <section className='modal-slide-vertical four-choice'>
 
-        <section className='text-container modal-child'>
+        <section className='text-container-vertical modal-child'>
           <p>{this.props.text} <span className='highlight-text'>{this.props.question}</span></p>
         </section>
 
-        <section className='image-container modal-child'>
+        <section className='image-container modal-child-vertical'>
           {
             this.props.options.map((option, i) => {
               return(

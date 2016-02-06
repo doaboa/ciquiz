@@ -31,6 +31,7 @@ html, body {
   position: absolute;
   top: 0.5em;
   right: 0.5em;
+  z-index: 100;
 }
 
 .step {
@@ -58,16 +59,31 @@ html, body {
   height: 100%;
 }
 
+.modal-slide-vertical {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+
 /* second level */
 .modal-child {
   display: flex;
   align-self: center;
 }
 
+.modal-child-vertical {
+  display: flex;
+}
+
 .text-container {
-  margin-top: 2em;
+  margin: 2em;
   flex: 2;
   width: 50%;
+}
+
+.text-container-vertical {
+  margin: 0 4em;
+  flex: 2;
 }
 
 .image-container {
