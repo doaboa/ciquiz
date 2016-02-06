@@ -15,5 +15,8 @@ open http://localhost:3000
 make build
 make watch
 ```
-## Post Request
-Open console for a log of posted element... or of course, network panel -> headers
+## Task
+- Given an object specifying text, image references, and varying layout styles:
+- Generate a quiz with multiple layouts
+- Take user information at end
+- Post all choices and user information in a specified format to a specified endpoint
